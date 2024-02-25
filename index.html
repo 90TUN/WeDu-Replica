@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> My Test Page</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://use.fontawesome.com/657b80fdff.js"></script>
+        <script src="https://kit.fontawesome.com/e372b1a146.js" crossorigin="anonymous"></script>
+
+        <style>
+            body{               
+                background-color: white;
+                color: black;
+                width: 100%;
+                position: absolute;
+                min-width: 322px;
+                
+            }
+            .main{
+                margin: 0;
+                margin-top: 100px;
+                height: auto;
+                margin-right: opx;
+            }
+            .main h1{
+                font-size: 60px;
+            }
+            .main p{
+                font-size: 24px;
+                margin-top: 40px;
+                margin-bottom: 70px;
+                max-width: 350px;
+            }
+            .main button{
+                border-radius: 10px;
+                background-color: rgb(0, 0, 0);
+                color: rgb(255, 255, 255);
+                height: 60px;
+                margin-bottom: 100px;
+                width: 170px;
+            }
+            .side button{
+                border-radius: 10px;
+                background-color: rgb(0, 0, 0);
+                color: rgb(255, 255, 255);
+                height: 60px;
+                margin-bottom: 100px;
+                width: 170px;
+                margin-left: 70px;
+                display: none;
+            }
+            .main button:hover{
+                height:60px;
+                width: 160px;
+            }
+            .col1{
+                height: auto;
+                padding-top: 100px;
+                padding-left: 50px;
+            }
+            .col1 img{
+                height: 70px;
+                width: 70px;
+                display: block;
+                margin-right: auto;
+            }
+            
+            .c{
+                text-align: left;
+                padding-left: 0px;
+                line-height: 30px;
+                display: inline;
+            }
+            .v{
+                text-align: left;
+                padding-left: 0px;
+                line-height: 30px;
+                display: inline;
+            }
+            .c p{
+                font-size:20px;
+                max-width: 120px;
+            }
+            .v p{
+                font-size:20px;
+                max-width: 120px;
+            }
+            .col2{
+                height: auto;
+            }
+            img{
+                height: 100%;
+                width: 100%;
+            }
+            .main2{
+                background-color:blueviolet;
+                height: 350px;
+                margin: 0;
+                padding-left: 100px;
+                padding-bottom: 50px;
+                padding-top: 100px;
+                width: 100%;
+                margin-right: 0px;
+            }
+            .purple1{
+                font-size: 60px;
+            }
+            .purple2 p{
+                font-size: 20px;
+                color: white;
+            }
+            .main3{
+                padding: 100px;
+                padding-top: 200px;
+                margin-bottom:100px;
+            }
+            #text1{
+                margin-top: 40px;
+                width: 100%;
+                font-size:20px;
+                text-align: left;
+            }
+            .main3 img{
+                height: 400px;
+                width: 300px;
+                border: 2px solid black;
+                border-radius: 20px;
+                margin-bottom: 40px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .main4 img{
+                height:100%;
+                width: 100%;
+            }
+            .create{
+                padding: 20px;
+                font-size: 20px;
+            }
+            .item2{
+                margin-top:100px;
+            }
+            .main5{
+                padding: 100px;
+                background-color:lavender;
+                height: auto;
+                
+            }
+            
+            .first img{
+                height: 150px;
+                width: 150px;
+                margin-bottom: 50px;
+            }
+            .second img{
+                height: 150px;
+                width: 150px;
+            }
+            .main6{
+                padding: 100px;
+            }
+            nav{
+                background-color: rgb(0, 0, 0);
+                color: rgb(255, 255, 255);
+            }
+            nav a{
+                color: rgb(255, 255, 255);
+                font-size: 20px;
+                margin-left: 20px;
+                font-weight: bolder;
+            }
+            nav button{
+                background-color: blueviolet;
+                color: rgb(255, 255, 255);
+                border-radius: 10px;
+                border: 2px solid rgb(0, 0, 0);
+                font-size: 15px;
+            }
+            .main7{
+                padding: 100px;
+                background-color:antiquewhite;
+                height: 700px;
+                width: 100%;
+            }
+           
+            .main7 .p1{
+                padding-bottom: 100px;
+            }
+           
+            .main7 button{
+                background-color: black;
+                color: white;
+                border: 1px solid white;
+                width: 150px;
+                height: 50px;
+                border-radius: 15px;
+            }
+            .main7 .row{
+                height: auto;
+            }
+            .card1{
+                height: auto;
+                width: 500px;
+                border-radius: 10px;
+                position: absolute;
+                padding: 0px;
+                background-color: black;
+                color: white;
+                
+            }
+            .card2{
+                background-color:blueviolet;
+                margin: 0;
+                height: 100%;
+                border: 2px solid black;
+                border-radius: 10px;
+                padding: 20px;
+            }
+            #Get{
+                margin-bottom: 20px;
+                border-radius: 10px;
+                height: 50px;
+                width: 300px;
+                background-color:white;
+                color: black;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .card2 li{
+                margin-top: 10px;
+            }
+            .premium{
+                padding-left: 50px;
+                padding-right: 50px;
+                padding-top: 10px;
+                height:auto;
+            }
+            #best{
+                background-color:orange;
+                color:black;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                position: relative;
+                bottom: 30px;
+                font-weight: bolder;
+                border-radius: 0%;
+                border: 2px solid black;
+
+            }
+            .main8{
+                padding:100px;
+                padding-top: 150px;
+                text-align: center;
+                padding-bottom: 0;
+            }
+            .main8 button{
+                background-color: black;
+                color:white;
+                margin-top: 50px;
+                padding: 10px;
+                border-radius: 10px;
+                width: 150px;
+            }
+            .main8 img{
+                width: 1000px;
+                margin-bottom: 0;
+
+            }
+            .last{
+                height: auto;
+                background-color: #8782F6;
+                padding: 100px;
+                width: 100%;
+            }
+            .last img{
+                width: 500px;
+                height: 150px;
+            }
+          .last p{
+            font-size: 20px;
+          }
+          .input-group{
+            width: auto;
+            height: 70px;
+          }
+          .add{
+            font-size: 20px;
+          }
+          #come{
+            margin-bottom: 50px;
+          }
+            @media only screen and (max-width:1199px){
+                .purple2{
+                    margin-top: 50px;
+                    
+                }
+                .main2{
+                    height: 600px;
+                }
+                .main7{
+                    height: 1500px;
+                }
+                .p2{
+                    display: flex;
+                    justify-content: center;
+                }
+                .b h1{
+                    text-align:center;
+                    
+                }
+                .colf{
+                    margin-bottom: 50px;
+                }
+                .colg{
+                    margin-bottom: 50px;
+                }
+                .socials{
+                    padding-top:40px;
+                }
+                .main4{
+                    padding:100px;
+                }
+                .main7{
+                    height: 1300px;
+                }
+                
+                
+                
+            }
+            @media only screen and (max-width:800px){
+               
+                .main7{
+                    padding: 0;
+                    width: 100%;
+                    padding: 100px;
+                    margin-right: 0px;
+                }
+                .main2{
+                    height: 700px;
+                    margin: 0;
+                }
+                #text1{
+                    padding: 0;
+                    width: 500px;
+                }
+                .main6 h1{
+                    text-align: center;
+                    margin: 0;
+                }
+                .b{
+                    text-align: center;
+                }
+                .main{
+                    margin-top: 120px;
+                   
+                }
+                
+            }
+            @media only screen and (max-width:575px){
+                .main2{
+                    width: 100%;
+                    padding: 50px;
+                    padding-top: 100px;
+                    margin:0px;
+                }
+                .main3{
+                    padding:50px;
+                    padding-top: 100px;
+                    margin:0px;
+                }
+                .main4{
+                    padding:50px;
+                    padding-top: 100px;
+                }
+                .main5{
+                    padding:50px;
+                    padding-top: 100px;
+                }
+                .main{
+                    margin:0px;
+                    margin-top: 100px;
+                }
+                .col1{
+                    padding: 20px;
+                }
+                .col1 h1{
+                    font-size: 50px;
+                }
+                .col1 button{
+                    display:none;
+                }
+                
+                
+                .main7{
+                    padding: 50px;
+                }
+                .p2{
+                    margin:50px;
+                    width: 7000px;
+                }
+               .items{
+                padding: 50%;
+                padding-top: 0;
+                text-align: center;
+                padding-bottom: 0;
+               }
+               .first{
+                padding: 25%;
+                padding-top: 0;
+                text-align: center;
+                padding-bottom: 0;
+               }
+               .second{
+                padding: 25%;
+                padding-top: 0;
+                text-align: center;
+                padding-bottom: 0;
+               }
+               .side button{
+                display: block;
+                margin-right: auto;
+                margin-left: auto;
+                margin-top: 50px;
+                text-align: center;
+               }
+            }
+            @media only screen and (max-width:635px){
+                .main2{
+                    min-width: 100%;
+                }
+            }
+            @media only screen and (max-width:500px){
+               .card1{
+                height: auto;
+               width: 300px;
+               }
+               #Get{
+                width: 170px;
+               }
+               .main2{
+                height: 700px;
+               }
+               .last{
+                padding: 20px;
+               }
+               .main8{
+                padding: 20px;
+                padding-bottom: 0px;
+               }
+               .main8 img{
+                height: 300px;
+                width: 100%;
+               }
+               .c img{
+                width: 100%;
+                height: 500px;
+                padding: 0px;
+               }
+               .main6{
+                padding: 10px;
+                padding-top: 40px;
+               }
+            }
+            @media only screen and (max-width:404px){
+                .main2{
+                height: 900px;
+               }
+               .p1 button{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+               }
+               .b img{
+                height: 270px;
+               }
+               .b{
+                margin-bottom: 50px;
+               }
+            }
+            @media only screen and (max-width:364px){
+                .main h1{
+                    font-size: 45px;
+                }
+                .main2{
+                height: 600px;
+                padding: 10px;
+                padding-top: 50px;
+               }
+               .main3{
+                padding: 20px;
+                padding-top: 60px;
+               }
+               .main4{
+                padding: 20px;
+                padding-top: 60px;
+                padding-bottom: 60px;
+               }
+               .main5{
+                padding: 20px;
+               }
+               .purple1{
+                margin-bottom: 0px;
+                padding-bottom: 0px;
+               }
+               .purple2{
+                margin-top: 0px;
+                padding-top: 0px;
+               }
+            }
+               @media only screen and (max-width:349px){
+                .main2{
+                height: 1100px;
+               }
+               .main8 h1{
+                font-size: 35px;
+               }
+               .socials h3{
+                font-size: 20px;
+               }
+            }
+              
+            @media only screen and (max-width:332px){
+                .main h1{
+                    font-size: 40px;
+                }
+                .main2{
+                height: 1100px;
+               }
+            }
+            .navbar-toggler-icon{
+                color:rgb(0, 0, 0);
+                background-color: white;
+            }
+            body p{
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg  fixed-top">
+            <a class="navbar-brand">Brand</a>
+            <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="my-nav" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"> <button class="button">Get Started</button> </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="main row container-fluid">
+        <div class=" container-fluid col-xl-6 col-md-12 col1">
+            <h1>Communicate.</h1>
+            <h1>Collaborate. Create</h1>
+            <p>WeDu provides an effective and powerful way to manage your projects</p>
+            <button>Get Started</button>
+            <div class="row items">
+                <div class="col-xl-4 col-md-4  col-sm-4 col-xs-4  v">
+                    <img src="images/icon1.png" alt="">
+                    <p>Speed & <br> Security</p>
+                    
+                </div>
+                <div class="col-xl-4 col-md-4 col-sm-4 col-xs-4 v">
+                    <img src="images/icon2.png" alt="">
+                    <p>Flexibility & <br> Scalability</p>
+                </div>
+                <div class="col-xl-4 col-md-4 col-sm-4 col-xs-4  v">
+                    <img src="images/icon3.png" alt="">
+                    <p>Better <br> collaboration</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-6 col-md-12 col2">
+            <img src="images/image1.png" alt="image1">
+        </div>
+        </div>
+        <div class="side">
+            <button> Get started</button>
+        </div>
+        
+        <div class="main2 row container-fluid">
+            <div class="col-xl-6 col-md-12 purple1">
+                <h1>With the Right <br> Software, Great Things <br> Can Happen </h1>
+            </div>
+        <div class="col-xl-6 purple2 col-md-12">
+            <p>
+                I'm a paragraph. Click here to add your own text and edit me. It’s easy.
+                 Just click “Edit Text” or double click me to add your own content and make 
+                 changes to the font.
+                 Feel free to drag and drop me anywhere you like on your page.
+                  I’m a great place for you to tell a story and let your users know a 
+                  little more about you.</p>
+        </div>
+        </div>
+        <div class="main3">
+            <h1>What We Offer</h1>
+            <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. 
+                Just click “Edit Text” or double click me to add your own content a
+                nd make changes to the font.</p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-xl-3 col-lg-6 col-md-6 b">
+                        <img class="img-fluid" src="images/p1.jpg" alt="">
+                        <h1 class="text-center">Workflows that work</h1>
+                        <p> a paragraph. Click here to add your own text and edit me. 
+                            I’m a great place for you to tell a story and let your users
+                             know a little more about you.</p>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 b">
+                        <img class="img-fluid" src="images/p2.jpg" alt="">
+                        <h1 class="text-center">Workflows that work</h1>
+                        <p> a paragraph. Click here to add your own text and edit me. 
+                            I’m a great place for you to tell a story and let your users
+                             know a little more about you.</p>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 b">
+                        <img class="img-fluid" src="images/p3.jpg" alt="">
+                        <h1 class="text-center">Workflows that work</h1>
+                        <p> a paragraph. Click here to add your own text and edit me. 
+                            I’m a great place for you to tell a story and let your users
+                             know a little more about you.</p>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 b">
+                        <img class="img-fluid" src="images/p4.jpg" alt="">
+                        <h1 class="text-center">Workflows that work</h1>
+                        <p> a paragraph. Click here to add your own text and edit me. 
+                            I’m a great place for you to tell a story and let your users
+                             know a little more about you.</p>
+                    </div>
+                </div>
+        </div>
+        <div class="main4">
+            <div class="row">
+                <div class="col-xl-6">
+                    <img src="images/image3.png" alt="">
+                </div>
+                <div class="col-xl-6 create">
+                    <h1>Built for Creatives, <br>By Creatives.</h1>
+                    <br>
+                    <p> paragraph. Click here to add your own text and edit me. It’s easy. 
+                        Just click “Edit Text” or double click me to add your own content
+                         and make changes to the font. I’m a great place for you to tell a 
+                         story and let your users know a little more about you.</p>
+                         
+                </div>
+            </div>
+        </div>
+        <div class="main5">
+            <h1>Trusted Among Industry Leaders</h1>
+            <br>
+            <p> paragraph. Click here to add your own text and edit me. It’s easy. 
+                Just click “Edit Text” or double click me to add your own content
+                 and make changes to the font. I’m a great place for you to tell a 
+                 story and let your users know a little more about you.</p>
+            <div class="row first">
+                <div class="col-xl-3 col-md-3 col-sm-6">
+                    <img src="images/i1.png" alt="">
+                </div>
+                <div class="col-xl-3 col-md-3 col-sm-6">
+                    <img src="images/i2.png" alt="">
+                </div>
+                <div class="col-xl-3 col-md-3 col-sm-6">
+                    <img src="images/i3.png" alt=""></div>
+                <div class="col-xl-3 col-md-3 col-sm-6">
+                    <img src="images/i4.png" alt="">
+                </div>
+            </div>
+            <br>
+            <div class="row second">
+                <div class="col-xl-3 col-md-3 col-sm-6">
+                    <img src="images/i5.png" alt="">
+                </div>
+                <div class="col-xl-3 col-md-3 col-sm-6">
+                    <img src="images/i6.png" alt="">
+                </div>
+                <div class="col-xl-3 col-md-3 col-sm-6">
+                    <img src="images/i7.png" alt="">
+                </div>
+                <div class="col-xl-3 col-md-3 col-sm-6"> 
+                    <img src="images/i8.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="main6">
+            <h1>Client Review</h1>
+            <br>
+            <div class="row w2">
+                <div class="col-xl-4 col-md-6 col-sm-12 c">
+                    <img src="images/r1.png" alt="">
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12  c">
+                    <img src="images/r2.png" alt="">
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12  c">
+                    <img src="images/r3.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="main7 container-fluid">
+            <div class="row">
+                <div class="col-xl-6 col-md-12 col-sm-12 p1">
+                    <h1>Explore  Our <br>Pricing Options. </h1>
+                    <br>
+                    <p id="come">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Maxime, ratione molestias! Velit dolorem ratione nam?
+                    </p>
+                         <button>See More</button>
+                </div>
+                <div class="col-xl-6 col-md-12 col-sm-12 p2">
+                    <div class="card1">
+                        <div class="premium">
+                             <button id="best">Best Value</button>
+                        <h1>Premium</h1>
+                        <h1>$ 50 </h1>
+                        <p>Every month</p>
+                        <p>Valid for 12 months</p>
+                        <button id="Get">Get Started</button>
+                        </div>
+                       
+                        <div class="container card2">
+                            <br>
+                            <ul>
+                                <li> I'm a benefit</li>
+                                <li> I'm a benefit</li>
+                                <li> I'm a benefit</li>
+                                <li> I'm a benefit</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main8">
+            <h1>Get Ready to Maximize your Productivity <br>With our Workflow Solutions </h1>
+            <button>Get Started</button>
+            <br>
+            <br>
+            <br>
+            <br>
+            <img class="img-fluid" src="images/final.png" alt="">
+        </div>
+        <div class="last">
+            <img class="img-fluid" src="images/end.png" alt="" >
+            <br>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-xl-4 col-md-6 col-sm-6 colf">
+                    <h3><b>Contact</b></h3>
+                    <br>
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <p>500 Terry Francois Street
+                             <br> San Francisco, CA 94158</p>
+                        </div>
+                        <div class="col-xl-6">
+                            <p>Sales: <br> Info@mysite.com </p>
+                        </div>
+                        <div class="col-xl-6">
+                            <p>General Inquiries: <br> 123-456-7890 </p>
+                        </div>
+                        <div class="col-xl-6">
+                            <p>Customer Care: <br> Info@mysite.com </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-xl-2 col-md-6 col-sm-6 colg">
+                    <h3><b>Quick Links</b></h3>
+                    <br>
+                    <p class="llink">Terms and Condition</p>
+                    <p class="llink"> Privacy Policy</p>
+                    
+                </div>
+                <div class="col-xl-6 col-md-12 col-sm-12 formed">
+                    <div class="row">
+                        <div class="col-xl-6 col-md-6 col-sm-6">
+                            <h3><b>Follow</b></h3>
+                            <br>
+                            <p> Sign up to get the latest news <br>on our products </p>
+                            <br>
+                            <div class=" container-fluid input-group">
+                                <input type="text" name="name" id="Name">
+                                <div class="input-group-append">
+                                    <span class="input-group-text add" id="basic-addon2"><b>Subscribe</b> </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-md-6 col-sm-6 socials">
+                            <h3><b>Facebook</b></h3>
+                            <br>
+                            <br>
+                            <h3><b>LinkedIn</b></h3>
+                            <br>
+                            <br>
+                            <h3><b>Youtube</b></h3>
+                            
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </body> 
+
+</html>
